@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pr-graphs"
+version = "0.1.0"
+description = ""
+authors = ["yoellevavi <yoel@r2-wireless.com>"]
+readme = "README.md"
+packages = [{include = "pr_graphs"}]
+
+[tool.poetry.scripts]
+start = "pr_graphs.start:start"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+memorix-client-redis = "1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
